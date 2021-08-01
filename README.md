@@ -1,5 +1,5 @@
 # tic-tac-toe (Python)
-There are 2 python files:
-Command Line Interace and Graphical User Interface.
+There are 2 python files for tic tac toe:
+Command Line Interface and Graphical User Interface.
 To play in command line, numpad is suggested.
-The GUI tic tac toe is made by using pygame.
+The GUI one is made by using the 'pygame' library.
