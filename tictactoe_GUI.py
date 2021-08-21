@@ -11,6 +11,11 @@ pygame.init()                       #IMPORTANT
 #box of the game
 window = pygame.display.set_mode((600, 750))        #(x, y)
 
+#title and icon
+pygame.display.set_caption("Tic Tac Toe")
+icon = pygame.image.load('tic-tac-toe.png')   #'load' loads the image in a variable. P.S.: Locaton of image(add r before it) if it is not inside folder. 32 pixel
+pygame.display.set_icon(icon)
+
 #board
 boardIMG = pygame.image.load('board.png')
 
