@@ -8,3 +8,5 @@ There are 2 modes in this game:
 1 player mode: Play with computer.
 
 2 player mode: Play with human.
+
+You can also play directly using the 'exe' file in the 'game' folder but make sure to download the whole 'game' folder. The 'exe' file was made using 'pyinstaller' library.
