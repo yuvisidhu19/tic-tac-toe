@@ -28,6 +28,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   
   1 | 2 | 3
   
+  
   Now, consider this scenario 1:
   
   7 | 8 | 9
@@ -38,6 +39,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   
   The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
   
+  
   Scenario 2:
   
   7 | 8 | 9
@@ -47,6 +49,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   1 | 2 | 3
   
   The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
+  
   
   Scenario 3:
   
