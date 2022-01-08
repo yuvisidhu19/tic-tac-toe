@@ -23,17 +23,17 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   I would refer according to the following positions in this example. 'X' is the player's move and 'O' is the program's move.
   
   7 | 8 | 9
-  ---------
+  
   4 | 5 | 6
-  ---------
+  
   1 | 2 | 3
   
   Now, consider this scenario 1:
   
   7 | 8 | 9
-  _________
+  
   4 | X | O
-  _________
+  
   1 | 2 | 3
   
   The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
