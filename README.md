@@ -21,6 +21,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   b. This function (find_GoodMove) finds an empty position which might be beneficial in the next program's move and places its marker there. I would explain this function using an example.
   
   I would refer according to the following positions in this example. 'X' is the player's move and 'O' is the program's move.
+  
   7 | 8 | 9
   ---------
   4 | 5 | 6
@@ -28,6 +29,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   1 | 2 | 3
   
   Now, consider this scenario 1:
+  
   7 | 8 | 9
   ---------
   4 | X | O
@@ -37,6 +39,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
   
   Scenario 2:
+  
   7 | 8 | 9
   ---------
   4 | O | X
@@ -46,6 +49,7 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
   
   Scenario 3:
+  
   7 | O | 9
   ---------
   O | X | X
