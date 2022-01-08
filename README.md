@@ -31,9 +31,9 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   Now, consider this scenario 1:
   
   7 | 8 | 9
-  ---------
+  _________
   4 | X | O
-  ---------
+  _________
   1 | 2 | 3
   
   The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
@@ -41,9 +41,9 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   Scenario 2:
   
   7 | 8 | 9
-  ---------
+  _________
   4 | O | X
-  ---------
+  _________
   1 | 2 | 3
   
   The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
@@ -51,9 +51,9 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   Scenario 3:
   
   7 | O | 9
-  ---------
+  _________
   O | X | X
-  ---------
+  _________
   1 | 2 | 3
   
   The program will mark its position in at 7 because it gives the program 2 opportunities of winning. If the player puts the marker at position 1, the program will simply win by   putting its marker at position 9. Similarly, if the player puts the marker at position 9 to block its path, the program will simply win by putting its marker at position 1.
