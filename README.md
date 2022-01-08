@@ -64,6 +64,12 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   Hence, the third step of my algorithm finds the best chances of winning in the next move.
   
 # Screenshots
+
+Menu
 ![menu](https://user-images.githubusercontent.com/67970877/148639693-ab99d413-aa6b-4369-a1e9-25fcfb952b89.PNG)
+
+1 player mode
 ![1 player mode](https://user-images.githubusercontent.com/67970877/148639698-830ae3d9-eed1-4407-a52c-e0d2d51bac60.PNG)
+
+2 player mode
 ![2 player mode](https://user-images.githubusercontent.com/67970877/148639701-593cd3c4-923e-46f5-9b48-deac7e6f0791.PNG)
