@@ -16,49 +16,54 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
 2. Else, it checks if the player can win using just one move. If the player can, the program places the 'O' at the favourable position and the game continues (given there is just one way the player can win).
 3. Else, the program would place its marker according to the function that isn't commented. I designed 2 functions for this purpose:
 
-a. This function (find_move) finds the empty positions and places its marker in a random empty position. It's currently commented in my code. Only available in        'tictactoe_CLI.py' file, line 182.  
+  a. This function (find_move) finds the empty positions and places its marker in a random empty position. It's currently commented in my code. Only available in        'tictactoe_CLI.py' file, line 182.  
 
-b. This function (find_GoodMove) finds an empty position which might be beneficial in the next program's move and places its marker there. I would explain this function using an example.
+  b. This function (find_GoodMove) finds an empty position which might be beneficial in the next program's move and places its marker there. I would explain this function using an example.
 
-I would refer according to the following positions in this example. 'X' is the player's move and 'O' is the program's move.
+  I would refer according to the following positions in this example. 'X' is the player's move and 'O' is the program's move.
 
-7 | 8 | 9
+  7 | 8 | 9
+  
+  4 | 5 | 6
 
-4 | 5 | 6
-
-1 | 2 | 3
-
-
-Now, consider this scenario 1:
-
-7 | 8 | 9
-
-4 | X | O
-
-1 | 2 | 3
-
-The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
+  1 | 2 | 3
 
 
-Scenario 2:
+  Now, consider this scenario 1:
 
-7 | 8 | 9
+  7 | 8 | 9
 
-4 | O | X
+  4 | X | O
 
-1 | 2 | 3
+  1 | 2 | 3
 
-The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
+  The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
 
 
-Scenario 3:
+  Scenario 2:
 
-7 | O | 9
+  7 | 8 | 9
 
-O | X | X
+  4 | O | X
 
-1 | 2 | 3
+  1 | 2 | 3
 
-The program will mark its position in at 7 because it gives the program 2 opportunities of winning. If the player puts the marker at position 1, the program will simply win by   putting its marker at position 9. Similarly, if the player puts the marker at position 9 to block its path, the program will simply win by putting its marker at position 1.
+  The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
 
-Hence, the third step of my algorithm finds the best chances of winning in the next move.
+
+  Scenario 3:
+
+  7 | O | 9
+
+  O | X | X
+
+  1 | 2 | 3
+
+  The program will mark its position in at 7 because it gives the program 2 opportunities of winning. If the player puts the marker at position 1, the program will simply win by   putting its marker at position 9. Similarly, if the player puts the marker at position 9 to block its path, the program will simply win by putting its marker at position 1.
+
+  Hence, the third step of my algorithm finds the best chances of winning in the next move.
+  
+# Screenshots
+![menu](https://user-images.githubusercontent.com/67970877/148639693-ab99d413-aa6b-4369-a1e9-25fcfb952b89.PNG)
+![1 player mode](https://user-images.githubusercontent.com/67970877/148639698-830ae3d9-eed1-4407-a52c-e0d2d51bac60.PNG)
+![2 player mode](https://user-images.githubusercontent.com/67970877/148639701-593cd3c4-923e-46f5-9b48-deac7e6f0791.PNG)
