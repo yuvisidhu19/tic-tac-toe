@@ -23,9 +23,9 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
   I would refer according to the following positions in this example. 'X' is the player's move and 'O' is the program's move.
   
   7 | 8 | 9
-  
+  - - - - -
   4 | 5 | 6
-  
+  - - - - -
   1 | 2 | 3
   
   Now, consider this scenario 1:
