@@ -1,4 +1,4 @@
-# tic-tac-toe (Python)
+# Tic Tac Toe
 There are 2 python files for tic tac toe:
 tictactoe_CLI.py (to play in Command Line Interface) and tictactoe_GUI.py (to play in Graphical User Interface).
 For tictactoe_CLI.py, numpad is suggested.
@@ -11,7 +11,7 @@ There are 2 modes in this game:
 
 You can also play directly using the 'exe' file in the 'game' folder but make sure to download the whole 'game' folder. The 'exe' file was made using 'pyinstaller' library.
 
-# Algorithm
+## Algorithm
 1. The program checks if it can win using just one move. If it can, it places the 'O' at the favourable position and wins the game.
 2. Else, it checks if the player can win using just one move. If the player can, the program places the 'O' at the favourable position and the game continues (given there is just one way the player can win).
 3. Else, the program would place its marker according to the function that isn't commented. I designed 2 functions for this purpose:
@@ -24,56 +24,50 @@ You can also play directly using the 'exe' file in the 'game' folder but make su
 
   | 7 | 8 | 9 | 
   |---|---|---|
-  
-  4 | 5 | 6
+  | 4 | 5 | 6 |
+  | 1 | 2 | 3 |
 
-  1 | 2 | 3
+  Now, consider this **scenario 1**:
 
-
-  Now, consider this scenario 1:
-
-  7 | 8 | 9
-
-  4 | X | O
-
-  1 | 2 | 3
+  | 7 | 8 | 9 |
+  |---|---|---|
+  | 4 | X | O |
+  | 1 | 2 | 3 |
 
   The program will mark its position in one of the following positions: 9, 3. Because, it is considering the 'O' at position 6 to make 3 marks in a row in next few moves.
 
 
-  Scenario 2:
+  **Scenario 2**:
 
-  7 | 8 | 9
-
-  4 | O | X
-
-  1 | 2 | 3
+  | 7 | 8 | 9 |
+  |---|---|---|
+  | 4 | O | X |
+  | 1 | 2 | 3 |
 
   The program will mark its position in one of the following positions: 1, 2, 3, 7, 8, 9. Because, it is considering the 'O' at position 5 which increases the chances of putting   3 marks in a row i.e. vertically and diagonally.
 
 
-  Scenario 3:
+  **Scenario 3**:
 
-  7 | O | 9
-
-  O | X | X
-
-  1 | 2 | 3
+  | 7 | O | 9 |
+  |---|---|---|
+  | O | X | X |
+  | 1 | 2 | 3 |
 
   The program will mark its position in at 7 because it gives the program 2 opportunities of winning. If the player puts the marker at position 1, the program will simply win by   putting its marker at position 9. Similarly, if the player puts the marker at position 9 to block its path, the program will simply win by putting its marker at position 1.
 
   Hence, the third step of my algorithm finds the best chances of winning in the next move.
   
-# Screenshots
+## Screenshots
 
-Menu
+**Menu**
 
 ![menu](https://user-images.githubusercontent.com/67970877/148639693-ab99d413-aa6b-4369-a1e9-25fcfb952b89.PNG)
 
-1 player mode
+**1 player mode**
 
 ![1 player mode](https://user-images.githubusercontent.com/67970877/148639698-830ae3d9-eed1-4407-a52c-e0d2d51bac60.PNG)
 
-2 player mode
+**2 player mode**
 
 ![2 player mode](https://user-images.githubusercontent.com/67970877/148639701-593cd3c4-923e-46f5-9b48-deac7e6f0791.PNG)
